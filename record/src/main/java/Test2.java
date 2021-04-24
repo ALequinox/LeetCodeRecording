@@ -33,7 +33,7 @@ public class Test2 {
         System.out.println(findNumberIn2DArray(a, 31));
     }
 
-    public static boolean findNumberIn2DArray(int[][] matrix, int target) {
+    private static boolean findNumberIn2DArray(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return false;
         }
