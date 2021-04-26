@@ -60,8 +60,6 @@ public class Test5 {
         return root;
     }
 
-
-
     private static int getIndex(int target, int[] targetArray){
         for (int i = 0; i < targetArray.length; i++) {
             if(target == targetArray[i]) return i;
