@@ -11,21 +11,21 @@ public class Test8 {
     输入：[2,2,2,0,1]
     输出：0
 
+    解题方法使用:二分法;
 
      */
     public static void main(String[] args) {
-        int[] nums = {2, 2, 2, 0, 1};
+        int[] nums = {1, 3, 5};
         System.out.println(minArray(nums));
     }
 
     private static int minArray(int[] numbers) {
         int k = 0;
-        if (numbers.length > 0) k = numbers[0];
-        for (int i = 1; i < numbers.length; i++) {
-            if (k > numbers[i]) return numbers[i];
-            else k = numbers[i];
+        if (numbers.length > 0) k = numbers[numbers.length - 1];
+        for (int i = numbers.length - 2; i >= 0; i--) {
+            if (k >= numbers[i]) k = numbers[i];
         }
 
-        return -1;
+        return k;
     }
 }
