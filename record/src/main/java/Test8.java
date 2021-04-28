@@ -14,10 +14,18 @@ public class Test8 {
 
      */
     public static void main(String[] args) {
-
+        int[] nums = {2, 2, 2, 0, 1};
+        System.out.println(minArray(nums));
     }
 
-    public int minArray(int[] numbers) {
-        return 0;
+    private static int minArray(int[] numbers) {
+        int k = 0;
+        if (numbers.length > 0) k = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            if (k > numbers[i]) return numbers[i];
+            else k = numbers[i];
+        }
+
+        return -1;
     }
 }
