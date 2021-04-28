@@ -18,7 +18,8 @@ public class Test5 {
               9  20
                 /  \
                15   7
-
+    解题：
+    https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/solution/mian-shi-ti-07-zhong-jian-er-cha-shu-by-leetcode-s/
      */
     public static void main(String[] args) {
         int[] preorder = {3,9,20,15,7};

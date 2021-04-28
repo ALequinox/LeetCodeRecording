@@ -20,6 +20,9 @@ public class Test2 {
         如果 num 大于 target，列下标减 1
         如果 num 小于 target，行下标加 1
         循环体执行完毕仍未找到元素等于 target ，说明不存在这样的元素，返回 false`
+
+        解题：
+        https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/solution/mian-shi-ti-04-er-wei-shu-zu-zhong-de-cha-zhao-b-3/
      */
     public static void main(String[] args) {
         int[][] a = {

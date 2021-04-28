@@ -13,7 +13,8 @@ public class Test1 {
     [2, 3, 1, 0, 2, 5, 3]
     输出：2 或 3
 
-
+    解题:
+    https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/solution/mian-shi-ti-03-shu-zu-zhong-zhong-fu-de-shu-zi-b-4/
      */
     public static void main(String[] args) {
         int[] nums = {1, 2, 2, 2, 5, 3};

@@ -10,6 +10,9 @@ public class Test4 {
 
     输入：head = [1,3,2]
     输出：[2,3,1]
+
+    解题：
+    https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/solution/mian-shi-ti-06-cong-wei-dao-tou-da-yin-lian-biao-b/
      */
 
     public static void main(String[] args) {
