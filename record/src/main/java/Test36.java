@@ -12,15 +12,38 @@ public class Test36 {
         node.right = node4;
         node1.left = node2;
         node1.right = node3;
-        new Test36().treeToDoublyList(node);
+        Node node5 = new Test36().treeToDoublyList(new Node(1));
+        for (int i = 0; i < 5; i++) {
+            System.out.println(node5.val);
+            node5 = node5.left;
+        }
 
     }
 
     public Node treeToDoublyList(Node root) {
+        if (root == null) return root;
         List<Node> nodeList = new LinkedList<>();
         traverse(root,nodeList);
-        System.out.println(nodeList);
-        return null;
+        if(nodeList.size() <= 1){
+            nodeList.get(0).right = nodeList.get(0);
+            nodeList.get(0).left = nodeList.get(0);
+            return nodeList.get(0);
+        }
+        int pre = -1;
+        for (int i = 0; i < nodeList.size(); i++) {
+           if(pre == -1){
+               nodeList.get(i).right = nodeList.get(i+1);
+           }else if(i == nodeList.size()-1){
+               nodeList.get(i).left = nodeList.get(i-1);
+           }else{
+               nodeList.get(i).right = nodeList.get(i+1);
+               nodeList.get(i).left = nodeList.get(i-1);
+           }
+           pre++;
+        }
+        nodeList.get(0).left = nodeList.get(nodeList.size()-1);
+        nodeList.get(nodeList.size()-1).right =nodeList.get(0);
+        return nodeList.get(0);
     }
 
     private void traverse(Node root, List<Node> nodeList) {
@@ -29,6 +52,6 @@ public class Test36 {
         }
         traverse(root.left,nodeList);
         nodeList.add(root);
-        traverse(root.left,nodeList);
+        traverse(root.right,nodeList);
     }
 }
