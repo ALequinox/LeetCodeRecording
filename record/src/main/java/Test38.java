@@ -14,6 +14,8 @@ public class Test38 {
     输入：s = "abc"
     输出：["abc","acb","bac","bca","cab","cba"]
 
+    题解:
+    https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/solution/mian-shi-ti-38-zi-fu-chuan-de-pai-lie-hui-su-fa-by/
      */
     private char[] c;
     private List<String> res = new LinkedList<>();
