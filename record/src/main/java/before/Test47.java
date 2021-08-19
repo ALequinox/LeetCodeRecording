@@ -23,7 +23,7 @@ public class Test47 {
      * 解释: 路径 1→3→5→2→1 可以拿到最多价值的礼物
      * 题解:https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/solution/mian-shi-ti-47-li-wu-de-zui-da-jie-zhi-dong-tai-gu/
      */
-    public int maxValue(int[][] grid) {
+    private int maxValue(int[][] grid) {
 
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
